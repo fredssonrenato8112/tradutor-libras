@@ -11,14 +11,11 @@ body {
 h2 { 
     margin-top:0; 
 }
-
-.input_video {
-  display: none;
-}
-.output_canvas {
+/*
+.captureCanvas {
   transform: scaleX(-1);
 }
-
+*/
 video, canvas { 
     border: 2px solid #444; 
     border-radius:8px; 
@@ -62,4 +59,16 @@ button {
     padding:8px 12px; 
     border-radius:6px; 
     cursor:pointer; 
+}
+/* MODO CLARO (padrão) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: 0.3s;
+}
+
+/* MODO ESCURO */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
 }

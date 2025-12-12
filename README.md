@@ -30,7 +30,7 @@ Backend Core: O micro-framework Python Flask serve como espinha dorsal da aplica
 
 Interface Dinâmica: O Frontend é construído em HTML5, CSS e JavaScript, proporcionando uma experiência de usuário fluida e responsiva.
 
-Inteligência Visual: A detecção de mãos é potencializada pela MediaPipe Hands (via CDN), uma tecnologia de ponta para análise de esqueleto de mão.
+Inteligência Visual: A detecção de mãos é potencializada pela MediaPipe Hands (via CDN), mais modelo IA treinado com Teachable Machine, uma tecnologia de ponta para análise de esqueleto de mão.
 
 🚀 Guia de Implantação Rápida
 
@@ -38,7 +38,7 @@ Para testar a capacidade de inclusão do projeto localmente, siga este guia:
 
 Pré-requisitos Essenciais
 
-Python 3.x
+Python 3.9x
 
 A biblioteca Flask (pip install flask)
 
@@ -46,20 +46,14 @@ Passos para Configuração
 
 Clonagem e Preparação:
 
-git clone [https://www.youtube.com/watch?v=RqfwLeY952s](https://www.youtube.com/watch?v=RqfwLeY952s)
-cd [Nome da Pasta do Projeto]
-
+git clone https://github.com/Jeanzhn/tradutor-libras.git cd [Nome da Pasta do Projeto]
 
 Instalação de Dependências:
-
-pip install -r requirements.txt 
-(Ou apenas 'pip install flask' se não houver requirements.txt)
-
+Neste projeto utilizamos várias bibliotecas essencias, para que o codigo como todo funcione é necessário sua instalação com... pip install -r requirements.txt 
 
 Inicialização do Servidor (Ponto de Entrada: main.py):
 O ambiente será iniciado em modo de debug para fácil desenvolvimento.
-
-python main.py
+Digite no terminal "python main.py"
 
 Acesso à Aplicação:
 Abra o seu navegador e navegue para o endereço local:
@@ -67,6 +61,8 @@ Abra o seu navegador e navegue para o endereço local:
 [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
 Atenção: Certifique-se de que sua câmera está acessível e desbloqueada para o navegador.
+
+#Ao criar uma máquina virtual com "python -m venv nome_do_ambiente (ex: python -m venv .venv).", faça a ativação utilizando: 1° ".\nome_do_ambiente\Scripts\activate.ps1" logo em seguida depois que a venv for ativada e no terminal no começo da linha aparecer "(.venv)" digite então  "python -m pip install -r requirements.txt" para instalar as depedencias na sua maquina virtual.
 
 Desenvolvedor(a) Líder: Grupo Fellas
 A tecnologia deve servir à humanidade, e este projeto é o nosso compromisso com essa visão.

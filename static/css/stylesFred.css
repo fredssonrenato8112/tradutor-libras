@@ -1,17 +1,39 @@
 :root {
-    --bg: #f0f2f5;
+    --bg: #e7e7e7;
     --text: #1f2937;
     --card: #ffffff;
-    --accent: #2563eb;
-    --accent-hover: #1e4fc7;
+    --accent: #777777;
+    --accent-hover: #777777;
     --shadow: rgba(0, 0, 0, 0.12);
     --muted: #6b7280;
-
+    
     --radius: 14px;
     --transition: 0.25s ease;
 }
 
-/*   RESET BÁSICO                 */
+.dark {
+    --bg: #101010;
+    --text: #e5e5e5;
+    --card: #1a1a1a;
+    --accent: #444;
+    --accent-hover: #555;
+    --shadow: rgba(255, 255, 255, 0.1);
+    --muted: #cccccc;
+}
+
+ .divtest{
+      width: 80%;
+      margin: 0 auto;
+      font-size: auto;
+      padding-left: 0;
+      text-align: center;
+      text-align: left;
+      display: inline-block;
+      list-style-position: inside;
+      margin-bottom: 5px;
+
+ }
+
 
 
 * {
@@ -39,6 +61,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    
 }
 
 .brand {
@@ -56,7 +80,7 @@ body {
     color: var(--text);
     padding: 8px 12px;
     border-radius: 8px;
-    transition: var(--transition);
+
     font-weight: 500;
 }
 
@@ -194,7 +218,7 @@ button[disabled] {
 
 .result {
     margin-top: 16px;
-    background: #f8fafc;
+
     padding: 14px;
     border-radius: 8px;
 }
@@ -229,4 +253,19 @@ button[disabled] {
 #dov img {
     width: 500px;        
     max-width: 100%;     
+}
+
+
+/* TEMA ESCURO GLOBAL VIA :root    */
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0;
+    font-size: var(--text);
+}
+
+.option input[type="range"] {
+    width: 180px;
 }
